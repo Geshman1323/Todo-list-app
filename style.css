@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%vh;
+  background: #222;
+}
+.intro {
+  width: 100%;
+  height: 4rem;
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  background: #555;
+  margin: 1rem 0;
+  height: 2.5rem;
+  width: 30rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+#inp {
+  all: unset;
+  padding: 0 1rem;
+  width: 65%;
+  height: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+  color: rgb(250, 250, 250);
+  font-size: 1.25rem;
+}
+::placeholder {
+  font-size: 1.25rem;
+}
+.btn {
+  all: unset;
+  background: #222;
+  margin: 0 0.5rem;
+  border-radius: 50px;
+  height: 75%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+#add:hover {
+  transition: 0.5s ease-in;
+  background: rgba(38, 255, 0, 0.798);
+  color: #fff;
+  box-shadow: 0 0 1rem rgba(38, 255, 0, 0.798);
+}
+#clear:hover,
+#delete:hover {
+  transition: 0.5s ease-in;
+  background: rgba(255, 0, 0, 0.798);
+  color: #fff;
+  box-shadow: 0 0 1rem rgba(255, 0, 0, 0.798);
+}
+.output > li {
+  background: #555;
+  margin: 2rem;
+  height: 2.5rem;
+  width: 35rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.25s ease-in;
+}
+.output > li > p {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+  border-radius: 50px;
+  color: rgb(223, 223, 223);
+  font-size: 1.25rem;
+}
+.output > li > button {
+  all: unset;
+  background: #222;
+  margin: 0 0.5rem;
+  border-radius: 50px;
+  height: 75%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+#done:hover {
+  transition: 0.5s ease-in;
+  background: rgba(255, 217, 0, 0.798);
+  color: #fff;
+  box-shadow: 0 0 1rem rgba(255, 230, 0, 0.798);
+}
+.finish {
+  transition: 0.25s ease-in;
+  opacity: 50%;
+}
+
+@media (max-width: 500px) {
+  .input {
+    margin: 1rem;
+    width: 95vw;
+  }
+  .output > li {
+    margin: 1rem;
+    width: 95vw;
+  }
+  .btn {
+    width: 25%;
+  }
+  .output > li > button {
+    width: 25%;
+  }
+  .output > li > p  {
+    width: 75%;
+    overflow: hidden;
+  }
+}
